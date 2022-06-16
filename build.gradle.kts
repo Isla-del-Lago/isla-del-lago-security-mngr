@@ -52,8 +52,3 @@ tasks.withType<KotlinCompile> {
 tasks.withType<Test> {
     useJUnitPlatform()
 }
-
-tasks.create("stage") {
-    dependsOn("installDist")
-}
-
